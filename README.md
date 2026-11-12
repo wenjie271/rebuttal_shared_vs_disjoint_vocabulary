@@ -1,8 +1,6 @@
 # Cross-language alignment with shared and disjoint vocabularies
 
-The figure compares raw representations and tokenwise novelty in transformers trained on the multilingual Random Hierarchy Model (mRHM). The two languages use independent lower-level substitution rules that draw on either a shared terminal vocabulary or two disjoint terminal vocabularies.
-
-Both vocabulary settings show qualitatively similar behaviour. For raw representations and novelty alike, information imbalance (II) reaches its minimum and mutual k-nearest-neighbour overlap (mKNN, k = 10) reaches its maximum at intermediate transformer depths.
+This is the supplementary figure. All setups (MRHM and training details) are the same as in the paper, except that the two synthetic languages share their vocabulary (dashed) instead of using disjoint vocabularies (solid). We plot cross-lingual similarity across the layers of transformers trained on both languages. Top: L_shared = 2, L_surface = 2. Bottom: L_shared = 1, L_surface = 3. (a, b) Raw representations: Information Imbalance (II; lower is more similar) and mutual k-nearest neighbours (mKNN, k = 10; higher is more similar). (c, d) The same for layerwise novelty, on a log scale.
 
 [Vector PDF](mrhm-shared-vs-disjoint-vocabulary-alignment.pdf) · [PNG](mrhm-shared-vs-disjoint-vocabulary-alignment.png)
 
